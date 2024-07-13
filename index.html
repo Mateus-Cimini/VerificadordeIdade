@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem e voce?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar()">
+
+ <header>
+    <h1>Verificador de Idade</h1>
+ </header>
+
+
+ <section>
+    <div>
+        <label>Ano de nascimento:</label>
+        <input 
+        type="number"
+        name="textoAno"
+        id="txtano"
+        step="1" 
+        min="1"
+        max="2025"
+        placeholder="ex. 1990"
+        />
+        <br>
+        
+        <input type="radio" name="radsex" id="mas" checked>
+        <label for="mas">Masculino</label>
+        <input type="radio" name="radsex" id="fem">
+        <label for="fem">Feminino</label>
+
+        <br>
+
+        <input type="submit" value="Verificar" onclick="verificar()">
+
+        <p>Prencha os dados acima para ve o resultado!</p>
+
+        <img src="" alt="">
+       
+    </div>
+
+    <div id="result">
+
+    </div>
+ </section>
+    
+ <footer>
+<p>&copy Mateus Cimini</p>
+ </footer>
+    <script src="script.js"></script>
+</body>
+</html>
